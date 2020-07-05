@@ -7,11 +7,17 @@ class Animal:
 
     # Here we are creating methods
     def hunger(self):
-        self.eat = "I am hungry"
-        print("I am hungry")
+        self.eat ="I am hungry!! YUM"
+        print("I am hungry!!")
+        self.eat = False
 
     def tired(self):
-        self.sleep = True
+        if self.sleep == True:
+            print("Yawnnn get some sleep!")
+        elif self.sleep == False:
+            print("Im not tired yet")
 
-animal = Animal(True, "ZZZZZZZ")
 
+animal = Animal("Hungry!!", "Sleepy!!")
+
+animal.tired()

@@ -10,13 +10,17 @@ class Human(Animal):
         self.comb_hair = comb_hair
 
     def tooth_ache(self):
-        self.brush_teeth = True
+        self.brush_teeth = "I need to brush my teeth"
+        print("I need to brush my teeth")
 
     def messy_hair(self):
         self.comb_hair = True
 
-human = Human("I am hungry", "I am Tired", "Brush your teeth!", "Brush your hair!")
+daniel = Human("I am hungry", "I am sleepy!", "I need to brush my teeth!", "I need to comb my hair!")
 
-print(human.hunger())
-print(human.messy_hair())
-print(human.tired())
+print(daniel.sleep())
+# print(daniel.brush_teeth)
+# print(daniel.comb_hair)
+# print(daniel.eat)
+# print(daniel.sleep)
+#print(daniel.tired())
